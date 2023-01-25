@@ -3,24 +3,23 @@ package com.driver;
 public class Main {
     public static void main(String[] args) {
         Product p = new Product();
-        p.product(3, 2);
-        p.product(3, 2, 2);
-        p.product(3.0, 2.0);
+        p.product(5, 6);
+        p.product(5,6,7);
+        p.product(5.5, 6.5);
     }
-
-    static class Product {
-        public int product(int x, int y) {
-            return x * y;
+    public static class Product{
+        public Product() {
         }
 
+        public int product(int x, int y) {
+            return x*y;
+        }
         public int product(int x, int y, int z) {
-            return x * y * z;
+            return x*y*z;
         }
 
         public double product(double x, double y) {
-            return x * y;
+            return x*y;
         }
-
     }
-
 }
